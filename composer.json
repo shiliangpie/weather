@@ -1,0 +1,29 @@
+{
+    "name": "shiliangpie\/weather",
+    "description": "weather",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shiliangpie",
+            "email": "1370808424@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-json": "*",
+        "phpunit/phpunit": "^7.5",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shiliangpie\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shiliangpie\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
