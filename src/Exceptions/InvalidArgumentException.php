@@ -1,9 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tanbin
- * Date: 2019/5/24
- * Time: 12:13.
+
+/*
+ * This file is part of the shiliangpie/weather.
+ *
+ * (c) shiliangpie<1370808424@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Shiliangpie\Weather\Exceptions;
