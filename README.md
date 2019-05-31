@@ -2,6 +2,7 @@
 
 <p align="center"> weather.</p>
 
+[![Build Status](https://travis-ci.org/shiliangpie/weather.svg?branch=master)](https://travis-ci.org/shiliangpie/weather)
 
 ## Installing
 
