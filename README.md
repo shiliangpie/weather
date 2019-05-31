@@ -3,6 +3,7 @@
 <p align="center"> weather.</p>
 
 [![Build Status](https://travis-ci.org/shiliangpie/weather.svg?branch=master)](https://travis-ci.org/shiliangpie/weather)
+![StyleCI build status](https://github.styleci.io/repos/189390583/shield)
 
 ## Installing
 
