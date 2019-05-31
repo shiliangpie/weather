@@ -2,7 +2,6 @@
 
 namespace Shiliangpie\Weather;
 
-
 use GuzzleHttp\Client;
 use Shiliangpie\Weather\Exceptions\HttpException;
 use Shiliangpie\Weather\Exceptions\InvalidArgumentException;
@@ -10,6 +9,7 @@ use Shiliangpie\Weather\Exceptions\InvalidArgumentException;
 class Weather
 {
     protected $key;
+
     protected $guzzleOptions = [];
 
     public function __construct($key)
@@ -31,7 +31,9 @@ class Weather
      * @param $city
      * @param string $type
      * @param string $format
+     *
      * @return mixed|string
+     *
      * @throws HttpException
      * @throws InvalidArgumentException
      */
@@ -56,12 +58,12 @@ class Weather
             'key' => $this->key,
             'city' => $city,
             'output' => $format,
-            'extensions' => $types[$type]
+            'extensions' => $types[$type],
         ]);
 
         try {
             $response = $this->getHttpClient()->get($url, [
-                'query' => $query
+                'query' => $query,
             ])->getBody()->getContents();
 
             return 'json' === $format ? \json_decode($response, true) : $response;
@@ -73,7 +75,9 @@ class Weather
     /**
      * @param $city
      * @param string $format
+     *
      * @return mixed|string
+     *
      * @throws HttpException
      * @throws InvalidArgumentException
      */
@@ -85,7 +89,9 @@ class Weather
     /**
      * @param $city
      * @param string $format
+     *
      * @return mixed|string
+     *
      * @throws HttpException
      * @throws InvalidArgumentException
      */
