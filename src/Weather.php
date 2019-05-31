@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the shiliangpie/weather.
+ *
+ * (c) shiliangpie<1370808424@qq.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Shiliangpie\Weather;
 
 use GuzzleHttp\Client;
@@ -38,8 +47,8 @@ class Weather
      * @throws InvalidArgumentException
      */
     public function getWeather($city, $type = 'live', $format = 'json')
-    {$url = 'https://restapi.amap.com/v3/weather/weatherInfo';
-
+    {
+        $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
         $types = [
             'live' => 'base',
             'forecast' => 'all',
